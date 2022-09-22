@@ -91,7 +91,7 @@ namespace Sammy\Packs\Plural {
       return $string . 's';
     }
 
-    public final function __invoke () {
+    public function __invoke () {
       return call_user_func_array ([$this, 'parse'], func_get_args ());
     }
   }}
